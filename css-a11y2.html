@@ -5,36 +5,38 @@
     <title>CSS accessibility: Task 2</title>
     <style>
       body {
-        background-color: #fff;
-        color: #333;
-        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
-        padding: 1em;
+        background-color: var(--clr-background);
+        font: 1em / 1.9 Helvetica Neue, Helvetica, Arial, sans-serif;
         margin: 0;
+        color: var(--clr-black);
+        line-height: 35px;
       }
 
       * {
         box-sizing: border-box;
       }
 
+      :root {
+        --clr-black: black;
+        --clr-background: rgb(238, 227, 227);
+      }
+
       main {
-        padding: 20px;
-        background-color: red;
-      }
-
-      h1, h2, p {
-        color: #999;
-      }
-
-      h1 {
-        font-size: 2vw;
-      }
-
-      h2 {
-        font-size: 1.5vw;
+        padding: 50px 150px;
+        background-color: var(--clr-background); 
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        
       }
 
       p {
-        font-size: 1.2vw;
+        font-size: 18px;
+        line-height: 25px;
       }
     </style>
   </head>
